@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "babel-node": "babel-node",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build",
-    "serve": "webpack serve"
+    "serve": "webpack serve",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -25,15 +25,26 @@
     "@babel/core": "^7.16.0",
     "@babel/node": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
+    "babel-core": "^7.0.0-0",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.4.2",
     "babel-loader": "^8.2.3",
     "babel-preset-env": "^1.7.0",
     "eslint": "^8.4.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^25.3.0",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.4.3",
+    "jest-cli": "^27.4.3",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0"
+  },
+  "dependencies": {
+    "css-loader": "^6.5.1",
+    "jest-environment-jsdom": "^27.4.3",
+    "on-change": "^4.0.0",
+    "style-loader": "^3.3.1"
   }
 }

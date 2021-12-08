@@ -1,5 +1,4 @@
-export default (a, b) => a + b;
+import app from './app';
+import '../style.css';
 
-const sum = (a, b) => a + b;
-
-console.log(sum(1, 3));
+app();
